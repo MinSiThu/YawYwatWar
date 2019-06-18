@@ -1,0 +1,95 @@
+.primaryStyle{
+    border:2px solid #F5F5F5;
+    border-radius: 5px;
+}
+
+/*ToolBar*/
+.primaryStyle--toolbar{
+    margin: 5px 10px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+/*TextEditor*/
+.primaryStyle--textEditor{
+    margin: 10px 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.primaryStyle--textEditor:focus{
+    outline: none;
+}
+
+.primaryStyle--textEditor a{
+    color : #008AE1;
+    text-decoration: none;
+}
+
+.primaryStyle--textEditor img{
+    width: 300px;
+    height : 200px;
+    max-width: 90wh;
+    max-height: 80vh;
+}
+
+/*ToolBars Button*/
+.primaryStyle--toolbar button{
+    border:none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin : 3px 5px 3px 0;
+    background-color: white;
+}
+
+.primaryStyle--toolbar button:hover{
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+.primaryStyle--toolbar button.clicked{
+    background-color: #F5F5F5;
+}
+
+/*ToolBars Selector*/
+.primaryStyle--toolbar select{
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin : 3px 5px 3px 0;
+    background-color: white;
+}
+
+.primaryStyle--toolbar option{
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin : 3px 5px 3px 0;
+    background-color: white;
+}
+
+/*Footer*/
+.primaryStyle--footer{
+    margin: 5px 10px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18pt;
+    color: gray;
+    border-top: 1px solid #F5F5F5;
+}
+
+.primaryStyle--footer button{
+    border:none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin : 3px 5px 3px 0;
+    background-color: white;
+}
+
+.primaryStyle--footer button:hover{
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+.primaryStyle--footer button.clicked{
+    background-color: #F5F5F5;
+}
