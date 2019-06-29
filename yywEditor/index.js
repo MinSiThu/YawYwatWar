@@ -1,7 +1,7 @@
 let TextEditor = require('./Elements/TextEditor');
 
 //SuperEditor is for better stylesheets Management
-class SuperEditor{
+class YawYwatWarEditor{
     constructor(element){
         this.mainElement = element;
         this.textEditor = new TextEditor();
@@ -21,7 +21,7 @@ class SuperEditor{
 }
 
 if(window){
-    window.SuperEditor = SuperEditor;
+    window.YawYwatWarEditor = YawYwatWarEditor;
 }
 
-module.exports = SuperEditor;
+module.exports = YawYwatWarEditor;

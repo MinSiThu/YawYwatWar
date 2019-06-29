@@ -1,5 +1,5 @@
 function bootstrap(){
-    let txeditor = new SuperEditor(document.getElementById('content'))
+    let txeditor = new YawYwatWarEditor(document.getElementById('content'))
     txeditor.setUp({
         toolbarConfig:["bold","italic","underline","link",
                         "image","heading",
