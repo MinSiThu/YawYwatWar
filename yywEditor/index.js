@@ -1,4 +1,6 @@
 let TextEditor = require('./Elements/TextEditor');
+let {State} = require("./plugins");
+let ContentInterfaces = require("./ContentInterfaces");
 
 //SuperEditor is for better stylesheets Management
 class YawYwatWarEditor{
@@ -9,14 +11,21 @@ class YawYwatWarEditor{
         this.theme = "";
     }
 
-    setUp({toolbarConfig,theme="primaryStyle"}){
+    setUp({toolbarConfig,plugins,theme="primaryStyle"}){
         this.textEditor.setUp({toolbarConfig,theme})
+        this.setPlguins(plugins)
         this.setUpTheme(theme);
     }
 
     setUpTheme(theme){
         this.theme = theme;
         this.mainElement.setAttribute('class',this.theme)
+    }
+
+    setPlguins(plugins){
+       for(var prop in plugins){
+           ContentInterfaces.setPlugin(prop,plugins[prop]);
+       }
     }
 }
 

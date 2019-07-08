@@ -105,14 +105,26 @@ const ContentInterfaces = {
     IMAGE:{
         ICON:`<i class="fa fa-image"></i>`,
         toggle:false,
-        activate(){
+        async getInput(){
+            return prompt('Enter Image URL!');
+        },
+        async activate(){
             SingletonDOM.element.focus();
-            let src = prompt('Enter Image URL!')
+            let src = await this.getInput();
             if(src != null){
                 document.execCommand('insertImage',false,src);
             }
         }
     },
+}
+
+ContentInterfaces.setPlugin = function(interfaceName,cb){
+
+    switch (interfaceName){
+        case "IMAGE":
+            ContentInterfaces["IMAGE"].getInput = cb;
+        break;
+    }
 }
 
 module.exports = ContentInterfaces;

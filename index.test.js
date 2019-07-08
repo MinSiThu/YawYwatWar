@@ -5,7 +5,10 @@ function bootstrap(){
                         "image","heading",
                         "left-align","right-align","center-align",
                         "ordered-list","unordered-list",
-                    ]
+                    ],
+        plugins: {
+            IMAGE:Plugins.imageExplorer,
+        }
     })
 }
 
