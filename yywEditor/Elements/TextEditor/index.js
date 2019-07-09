@@ -8,6 +8,7 @@ class TextEditor extends AbstractElement{
         super('div');
         this.theme = "";
         this.element.setAttribute('contenteditable',true);
+        SingletonDOM.setDOM(this.element);
     }
 
     setUp({toolbarConfig,theme="primaryStyle"}){
@@ -29,7 +30,6 @@ class TextEditor extends AbstractElement{
 
     setUpTheme(theme){
         this.theme = theme;
-        SingletonDOM.setDOM(this.element);
         SingletonDOM.setTheme(this.theme);
         this.element.classList.add(theme+"--textEditor")
     }

@@ -1,6 +1,7 @@
 let TextEditor = require('./Elements/TextEditor');
 let {State} = require("./plugins");
 let ContentInterfaces = require("./ContentInterfaces");
+let SingletonDOM = require("./SingletonDOM");
 
 //SuperEditor is for better stylesheets Management
 class YawYwatWarEditor{
@@ -26,6 +27,10 @@ class YawYwatWarEditor{
        for(var prop in plugins){
            ContentInterfaces.setPlugin(prop,plugins[prop]);
        }
+    }
+
+    getHTML(){
+        return SingletonDOM.getHTML();
     }
 }
 

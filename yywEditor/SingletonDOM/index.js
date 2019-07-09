@@ -1,8 +1,10 @@
-
-
 class SingletonDOM{
     static setDOM(dom){
         SingletonDOM.element = dom;   
+    }
+
+    static getDOM(){
+        return SingletonDOM.element;
     }
 
     static setTheme(theme){

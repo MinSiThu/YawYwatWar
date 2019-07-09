@@ -18,9 +18,7 @@ class Footer extends AbstractElement{
     static createProductFooter(){
         let footer = new Footer();
         let productName = new Typography('©YawYwatWar');
-        let htmlButton = new Button(HTMLConvertor.toHTML);
         footer.addText(productName.getTextNode());
-        footer.add(htmlButton)
         return footer;
     }
 }

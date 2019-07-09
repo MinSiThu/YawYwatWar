@@ -20,5 +20,4 @@ module.exports = function(State){
         let path = await openFileExplorer(State);    
         return path;
     }
-    
 }
