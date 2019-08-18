@@ -5,6 +5,7 @@ const ContentInterfaces = {
         ICON:"<b>B</b>",
         shortcutKey:"ctrl+b",
         toggle:true,
+        state: () => document.queryCommandState('bold'),
         activate:()=>{
             SingletonDOM.element.focus();
             document.execCommand('bold',false);
@@ -14,6 +15,7 @@ const ContentInterfaces = {
         ICON:"<i>i</i>",
         shortcutKey:"ctrl+i",
         toggle:true,
+        state: () => document.queryCommandState('italic'),
         activate(){
             SingletonDOM.element.focus();
             document.execCommand('italic',false);
@@ -23,6 +25,7 @@ const ContentInterfaces = {
         ICON:"<u>U</u>",
         shortcutKey:"ctrl+u",
         toggle:true,
+        state: () => document.queryCommandState('underline'),
         activate(){
             SingletonDOM.element.focus();
             document.execCommand('underline',false);
@@ -32,6 +35,7 @@ const ContentInterfaces = {
         ICON:`<i class="fa fa-align-left"></i>`,
         shortcutKey:"",
         toggle:true,
+        state: () => document.queryCommandState('justifyleft'),
         activate(){
             SingletonDOM.element.focus();
             document.execCommand('justifyleft',false);
@@ -41,6 +45,7 @@ const ContentInterfaces = {
         ICON:`<i class="fa fa-align-right"></i>`,
         shortcutKey:"",
         toggle:true,
+        state: () => document.queryCommandState('justifyright'),
         activate(){
             SingletonDOM.element.focus();
             document.execCommand('justifyright',false);
@@ -50,6 +55,7 @@ const ContentInterfaces = {
         ICON:`<i class="fa fa-align-center"></i>`,
         shortcutKey:"",
         toggle:true,
+        state: () => document.queryCommandState('justifycenter'),
         activate(){
             SingletonDOM.element.focus();
             document.execCommand('justifycenter',false);
