@@ -6,11 +6,11 @@ npm i --save yawywatwar-editor
 
 ```html
 
-<link rel="stylesheet" href="/yywEditor/stylesheets/TextEditor.css">
+<link rel="stylesheet" href="/https://unpkg.com/yawywatwar-editor@latest/yywEditor/stylesheets/TextEditor.css">
 
 <div id="content">
-            </div> 
-<script src="../node_modules/yawywatwar-editor/index.js"><script>
+</div> 
+<script src="https://unpkg.com/yawywatwar-editor@latest/index.js"><script>
 ```
 
 ```js
